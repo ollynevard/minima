@@ -6,6 +6,6 @@
     "Olly Nevard <olivernevard@greeneking.co.uk>"
   ],
   "ignore": [
-    "**/.*",
+    "**/.*"
   ]
 }
