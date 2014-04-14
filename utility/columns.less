@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Minima: Columns
+   ========================================================================== */
+
+.u-columns() {
+/* Global
+   -------------------------------------------------------------------------- */
+  .u-columns-rules();
+}
+
+.u-sm-columns() {
+/* Small
+   -------------------------------------------------------------------------- */
+  @media @media-sm {
+    .u-columns-rules(sm);
+  }
+}
+
+.u-md-columns() {
+/* Medium
+   -------------------------------------------------------------------------- */
+  @media @media-md {
+    .u-columns-rules(md);
+  }
+}
+
+.u-lg-columns() {
+/* Large
+   -------------------------------------------------------------------------- */
+  @media @media-lg {
+    .u-columns-rules(lg);
+  }
+}
+
+.u-xl-columns() {
+/* Extra large
+   -------------------------------------------------------------------------- */
+  @media @media-xl {
+    .u-columns-rules(xl);
+  }
+}
+
+.u-columns-rules(@breakpoint: ~'') {
+  .utility-prefix(@breakpoint);
+
+  [class^='@{prefix}columns'],
+  [class*=' @{prefix}columns'] {
+    column-gap: @space-horizontal;
+  }
+
+  .@{prefix}columns2 { column-count: 2; }
+  .@{prefix}columns3 { column-count: 3; }
+  .@{prefix}columns4 { column-count: 4; }
+  .@{prefix}columns5 { column-count: 5; }
+}

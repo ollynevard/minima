@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+//  Minima: Utility
+// -----------------------------------------------------------------------------
+
+// Helper mixin to generate prefixes for utility class names using specified
+// breakpoint.
+.utility-prefix(@breakpoint: ~'') when (@breakpoint = ~'') {
+  @prefix: ~'u-';
+}
+
+.utility-prefix(@breakpoint: ~'') when not (@breakpoint = ~'') {
+  @prefix: ~'u-@{breakpoint}-';
+}

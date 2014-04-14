@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Minima: Links
+   ========================================================================== */
+
+@link-colour: @colour-primary;
+@link-colour-hover: @colour-primary;
+
+a {
+  color: @link-colour;
+  text-decoration: none;
+  transition: 0.2s all;
+}
+
+a:hover {
+  color: @link-colour-hover;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: @link-colour-hover;
+  display: inline-block;
+  line-height: 1;
+  outline: 1px dashed @link-colour-hover;
+  outline-offset: 2px;
+}

@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Minima: Lists
+   ========================================================================== */
+
+/* (Un)ordered lists */
+ul, ol {
+  margin-bottom: @space-vertical;
+  margin-top: 0;
+  padding-left: @space-horizontal;
+
+  ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+ul, ol {
+  &.inline {
+
+  }
+
+  &.u-list-nobullet {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+/* Description lists */
+dl {
+  font-size: 0px;       /* Collapse white-space between inline block elements */
+  margin-bottom: @space-vertical;
+  margin-top: 0;
+}
+
+dt, dd {
+  display: inline-block;
+  font-size: 1rem;      /* Reset font-size */
+  vertical-align: top;
+  width: 100%;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+  padding-left: @space-horizontal;
+}
+
+dl {
+  &[class^="u-inline"] dd {
+    padding-left: 0;
+  }
+
+  &.u-inline2080 {
+    dt { width: 20%; }
+    dd { width: 80%; }
+  }
+
+  &.u-inline3070 {
+    dt { width: 30%; }
+    dd { width: 70%; }
+  }
+
+  &.u-inline4060 {
+    dt { width: 40%; }
+    dd { width: 50%; }
+  }
+}

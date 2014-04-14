@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Minima: Headings
+   ========================================================================== */
+
+@headings-color: @colour-neutral-darker;
+@headings-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+	color: @headings-color;
+	font-family: @headings-font-family;
+	font-weight: normal;
+	margin-bottom: @space-vertical;
+	margin-top: 0;
+	position: relative;
+	text-rendering: optimizeLegibility;
+
+	> small {
+		color: @colour-neutral;
+		font-size: .6em;
+	}
+}

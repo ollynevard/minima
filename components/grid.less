@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Minima: Grid
+   ========================================================================== */
+
+@grid-space-horizontal: @space-horizontal;
+@grid-space-vertical: @space-vertical;
+
+.Grid {
+  display: block;
+  padding: 0;
+  margin: 0 0 0 -@grid-space-horizontal;
+  text-align: left;
+  font-size: 0;
+}
+
+.Grid-cell {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 0 @grid-space-vertical;
+  padding: 0 0 0 @grid-space-horizontal;
+  text-align: left;
+  vertical-align: top;
+  width: 100%;
+}
