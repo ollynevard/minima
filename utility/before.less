@@ -1,0 +1,204 @@
+/* ==========================================================================
+   Minima: Before
+   ========================================================================== */
+
+.u-before() {
+/* Global
+   -------------------------------- */
+  .u-before-rules();
+}
+
+.u-sm-before() {
+/* Small
+   -------------------------------- */
+  @media @media-sm {
+    .u-before-rules(sm);
+  }
+}
+
+.u-md-before() {
+/* Medium
+   -------------------------------- */
+  @media @media-md {
+    .u-before-rules(md);
+  }
+}
+
+.u-lg-before() {
+/* Large
+   -------------------------------- */
+  @media @media-lg {
+    .u-before-rules(lg);
+  }
+}
+
+.u-xl-before() {
+/* Extra large
+   -------------------------------- */
+  @media @media-xl {
+    .u-before-rules(xl);
+  }
+}
+
+.u-before-rules(@breakpoint: ~'') {
+  .utility-prefix(@breakpoint);
+
+  /* Halves */
+  .@{prefix}before1of2,
+  .@{prefix}before2of4,
+  .@{prefix}before3of6,
+  .@{prefix}before4of8,
+  .@{prefix}before5of10,
+  .@{prefix}before6of12,
+  .@{prefix}before8of16 {
+    margin-left: 1/2 * 100% !important;
+  }
+
+  /* Thirds */
+  .@{prefix}before1of3,
+  .@{prefix}before2of6,
+  .@{prefix}before4of12 {
+    margin-left: 1/3 * 100% !important;
+  }
+
+  .@{prefix}before2of3,
+  .@{prefix}before4of6,
+  .@{prefix}before8of12 {
+    margin-left: 2/3 * 100% !important;
+  }
+
+  /* Quarters */
+  .@{prefix}before1of4,
+  .@{prefix}before2of8,
+  .@{prefix}before3of12,
+  .@{prefix}before4of16 {
+    margin-left: 1/4 * 100% !important;
+  }
+
+  .@{prefix}before3of4,
+  .@{prefix}before6of8,
+  .@{prefix}before9of12,
+  .@{prefix}before12of16 {
+    margin-left: 3/4 * 100% !important;
+  }
+
+  /* Fifths */
+  .@{prefix}before1of5,
+  .@{prefix}before2of10 {
+    margin-left: 1/5 * 100% !important;
+  }
+
+  .@{prefix}before2of5,
+  .@{prefix}before4of10 {
+    margin-left: 2/5 * 100% !important;
+  }
+
+  .@{prefix}before3of5,
+  .@{prefix}before6of10 {
+    margin-left: 3/5 * 100% !important;
+  }
+
+  .@{prefix}before4of5,
+  .@{prefix}before8of10 {
+    margin-left: 4/5 * 100% !important;
+  }
+
+  /* Sixths */
+  .@{prefix}before1of6,
+  .@{prefix}before2of12 {
+    margin-left: 1/6 * 100% !important;
+  }
+
+  .@{prefix}before5of6,
+  .@{prefix}before10of12 {
+    margin-left: 5/6 * 100% !important;
+  }
+
+  /* Eighths */
+  .@{prefix}before1of8,
+  .@{prefix}before2of16 {
+    margin-left: 1/8 * 100% !important;
+  }
+
+  .@{prefix}before3of8,
+  .@{prefix}before6of16 {
+    margin-left: 3/8 * 100% !important;
+  }
+
+  .@{prefix}before5of8,
+  .@{prefix}before10of16 {
+    margin-left: 5/8 * 100% !important;
+  }
+
+  .@{prefix}before7of8,
+  .@{prefix}before14of16 {
+    margin-left: 7/8 * 100% !important;
+  }
+
+  /* Tenths */
+  .@{prefix}before1of10 {
+    margin-left: 1/10 * 100% !important;
+  }
+
+  .@{prefix}before3of10 {
+    margin-left: 3/10 * 100% !important;
+  }
+
+  .@{prefix}before7of10 {
+    margin-left: 7/10 * 100% !important;
+  }
+
+  .@{prefix}before9of10 {
+    margin-left: 9/10 * 100% !important;
+  }
+
+  /* Twelfths */
+  .@{prefix}before1of12 {
+    margin-left: 1/12 * 100% !important;
+  }
+
+  .@{prefix}before5of12 {
+    margin-left: 5/12 * 100% !important;
+  }
+
+  .@{prefix}before7of12 {
+    margin-left: 7/12 * 100% !important;
+  }
+
+  .@{prefix}before11of12 {
+    margin-left: 11/12 * 100% !important;
+  }
+
+  /* Sixteenths */
+  .@{prefix}before1of16 {
+    margin-left: 1/16 * 100% !important;
+  }
+
+  .@{prefix}before3of16 {
+    margin-left: 3/16 * 100% !important;
+  }
+
+  .@{prefix}before5of16 {
+    margin-left: 5/16 * 100% !important;
+  }
+
+  .@{prefix}before7of16 {
+    margin-left: 7/16 * 100% !important;
+  }
+
+  .@{prefix}before9of16 {
+    margin-left: 9/16 * 100% !important;
+  }
+
+  .@{prefix}before11of16 {
+    margin-left: 11/16 * 100% !important;
+  }
+
+  .@{prefix}before13of16 {
+    margin-left: 13/16 * 100% !important;
+  }
+
+  .@{prefix}before15of16 {
+    margin-left: 15/16 * 100% !important;
+  }
+}
