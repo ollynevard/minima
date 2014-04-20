@@ -2,14 +2,20 @@
    Minima: Container
    ========================================================================== */
 
-body > .Container {
+.Container {
   padding-left: @space-horizontal;
   padding-right: @space-horizontal;
 
-  > .Container-inner {
-    margin: 0 auto;
-    max-width: @page-width;
-    padding-bottom: @space-vertical;
-    padding-top: @space-vertical;
+  .Container {
+    padding-left: 0;
+    padding-right: 0;
   }
+}
+
+.Container-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: @page-width;
+  padding-bottom: @space-vertical;
+  padding-top: @space-vertical;
 }
