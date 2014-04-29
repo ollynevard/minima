@@ -2,23 +2,75 @@
    Minima: Grid
    ========================================================================== */
 
-@grid-space-horizontal: @space-horizontal;
-@grid-space-vertical: @space-vertical;
+@grid-font-size: 1rem;
+@grid-gutter-size: @space-horizontal;
 
+/* Grid container
+   -------------------------------------------------------------------------- */
+   
 .Grid {
   display: block;
   padding: 0;
-  margin: 0 0 0 -@grid-space-horizontal;
+  margin: 0;
   text-align: left;
   font-size: 0;
 }
 
+/**
+ * Modifier: center align all grid cells
+ */
+
+.Grid--alignCenter {
+  text-align: center;
+}
+
+/**
+ * Modifier: right align all grid cells
+ */
+
+.Grid--alignRight {
+  text-align: right;
+}
+
+/**
+ * Modifier: middle-align grid cells
+ */
+
+.Grid--alignMiddle > .Grid-cell {
+  vertical-align: middle;
+}
+
+/**
+ * Modifier: gutters
+ */
+
+.Grid--withGutter {
+  margin-left: -@grid-gutter-size;
+  
+  > .Grid-cell {
+    padding-left: @grid-gutter-size;
+  }
+}
+
+/* Grid cell
+   -------------------------------------------------------------------------- */
+
 .Grid-cell {
   box-sizing: border-box;
   display: inline-block;
-  font-size: 1rem;
-  padding: 0 0 0 @grid-space-horizontal;
+  font-size: @grid-font-size;
+  margin: 0;
+  padding: 0;
   text-align: left;
   vertical-align: top;
   width: 100%;
+}
+
+/**
+ * Modifier: horizontally center a grid cell.
+ */
+
+.Grid-cell--center {
+  display: block;
+  margin: 0 auto;
 }
