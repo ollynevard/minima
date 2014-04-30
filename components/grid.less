@@ -7,13 +7,17 @@
 
 /* Grid container
    -------------------------------------------------------------------------- */
-   
+
 .Grid {
   display: block;
   padding: 0;
-  margin: 0;
+  margin: 0 0 @space-vertical;
   text-align: left;
   font-size: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /**
@@ -46,7 +50,7 @@
 
 .Grid--withGutter {
   margin-left: -@grid-gutter-size;
-  
+
   > .Grid-cell {
     padding-left: @grid-gutter-size;
   }
