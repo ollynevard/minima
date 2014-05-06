@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------
+//  Minima: Config
+// -----------------------------------------------------------------------------
+
+// Base
+// -----------------------------------------------------------------------------
+
+@base-color: @color-neutral-dark;
+@base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@base-font-size: 16px;
+@base-line-height: 1.5;
+
+// Headings
+// -----------------------------------------------------------------------------
+
+@headings-color: @color-neutral-darker;
+@headings-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Links
+// -----------------------------------------------------------------------------
+
+@link-color: @color-primary;
+@link-color-hover: @color-primary-light;
+
+// Grid
+// -----------------------------------------------------------------------------
+
+@grid-font-size: 1rem;
+@grid-gutter-size: @space-horizontal;
+
+// Space
+// -----------------------------------------------------------------------------
+
+// Horizontal
+@space-horizontal-xs: @space-vertical / 4;
+@space-horizontal-sm: @space-horizontal / 2;
+@space-horizontal:    20px;
+@space-horizontal-lg: @space-horizontal * 2;
+@space-horizontal-xl: @space-horizontal * 4;
+
+// Vertical
+@space-vertical-xs: @space-vertical / 4;
+@space-vertical-sm: @space-vertical / 2;
+@space-vertical:    20px;
+@space-vertical-lg: @space-vertical * 2;
+@space-vertical-xl: @space-vertical * 4;
+
+// Media query breakpoints
+// -----------------------------------------------------------------------------
+
+@mq-sm-min-width: 24em;
+@mq-md-min-width: 36em;
+@mq-lg-min-width: 48em;
+@mq-xl-min-width: 60em;
+
+@mq-xs-max-width: (@mq-sm-min-width - 0.01em);
+@mq-sm-max-width: (@mq-md-min-width - 0.01em);
+@mq-md-max-width: (@mq-lg-min-width - 0.01em);
+@mq-lg-max-width: (@mq-xl-min-width - 0.01em);
+
+@mq-xs: ~"screen and (max-width: @{media-xs-max-width})";
+@mq-sm: ~"screen and (min-width: @{media-sm-min-width}) and (max-width: @{media-sm-max-width})";
+@mq-md: ~"screen and (min-width: @{media-md-min-width}) and (max-width: @{media-md-max-width})";
+@mq-lg: ~"screen and (min-width: @{media-lg-min-width}) and (max-width: @{media-lg-max-width})";
+@mq-xl: ~"screen and (min-width: @{media-xl-min-width})";
+
+// Off-canvas
+// -----------------------------------------------------------------------------
+
+@offcanvas-transition-speed: .2s;
+
+// Colors
+// -----------------------------------------------------------------------------
+
+// Neutral
+@color-neutral-darker: darken(@color-neutral, 40%);
+@color-neutral-dark: darken(@color-neutral, 20%);
+@color-neutral: hsl(0, 0%, 50%);
+@color-neutral-light: lighten(@color-neutral, 20%);
+@color-neutral-lighter: lighten(@color-neutral, 40%);
+
+// Primary
+@color-primary-darker: darken(@color-neutral, 40%);
+@color-primary-dark: darken(@color-neutral, 20%);
+@color-primary: @color-neutral;
+@color-primary-light: lighten(@color-neutral, 20%);
+@color-primary-lighter: lighten(@color-neutral, 40%);

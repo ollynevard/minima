@@ -1,6 +1,7 @@
 /* ==========================================================================
    Minima: Debug - Media breakpoints
    ========================================================================== */
+
 body {
   &:after {
     background: rgba(0,0,0,.7);
@@ -13,22 +14,22 @@ body {
     right: 0;
   }
 
-  @media @media-sm {
+  @media @mq-sm {
     &:after {
       content: "Small";
     }
   }
-  @media @media-md {
+  @media @mq-md {
     &:after {
       content: "Medium";
     }
   }
-  @media @media-lg {
+  @media @mq-lg {
     &:after {
       content: "Large";
     }
   }
-  @media @media-xl {
+  @media @mq-xl {
     &:after {
       content: "X Large";
     }

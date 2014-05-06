@@ -2,10 +2,10 @@
    Minima: OffCanvas
    ========================================================================== */
 
-@offcanvas-speed: .2s;
+@offcanvas-transition-speed: .2s;
 
 [data-offcanvas-fixed] {
-  transition: @offcanvas-speed all;
+  transition: @offcanvas-transition-speed all;
 }
 
 .OffCanvas {
@@ -30,14 +30,14 @@
   position: absolute;
   right: 0;
   top: 0;
-  transition: @offcanvas-speed all;
+  transition: @offcanvas-transition-speed all;
 }
 
 .OffCanvas-panel {
   overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
-  transition: @offcanvas-speed all;
+  transition: @offcanvas-transition-speed all;
   z-index: 20;
 }
 
