@@ -2,8 +2,6 @@
    Minima: OffCanvas
    ========================================================================== */
 
-@offcanvas-transition-speed: .2s;
-
 [data-offcanvas-fixed] {
   transition: @offcanvas-transition-speed all;
 }
@@ -13,7 +11,7 @@
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  top: @offcanvas-offset-top;
 
   &.is-open {
     .OffCanvas-overlay {
