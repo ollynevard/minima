@@ -14,21 +14,30 @@ body {
     right: 0;
   }
 
+  @media @mq-xs {
+    &:after {
+      content: "X Small";
+    }
+  }
+
   @media @mq-sm {
     &:after {
       content: "Small";
     }
   }
+
   @media @mq-md {
     &:after {
       content: "Medium";
     }
   }
+
   @media @mq-lg {
     &:after {
       content: "Large";
     }
   }
+  
   @media @mq-xl {
     &:after {
       content: "X Large";
