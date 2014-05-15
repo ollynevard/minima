@@ -1,0 +1,12 @@
+{
+  "name": "minima",
+  "description": "A modular, responsive front-end framework",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-autoprefixer": "~0.7.2",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-less": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.0"
+  }
+}
