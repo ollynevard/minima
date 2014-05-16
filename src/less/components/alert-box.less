@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Minima: AlertBox
+   ========================================================================== */
+
+.AlertBox {
+  background: @color-neutral-lighter;
+  color: #fff;
+  margin-bottom: @space-vertical;
+  padding: @space-vertical-sm @space-horizontal-lg @space-vertical-sm @space-horizontal-sm;
+  position: relative;
+
+  &.is-status {
+    background: @color-success;
+    border: 1px solid darken(@color-success, 5%);
+
+    .AlertBox-close {
+      color: darken(@color-success, 25%);
+    }
+  }
+
+  &.is-warning {
+    background: @color-warning;
+    border: 1px solid darken(@color-warning, 5%);
+
+    .AlertBox-close {
+      color: darken(@color-warning, 25%);
+    }
+  }
+
+  &.is-error {
+    background: @color-error;
+    border: 1px solid darken(@color-error, 5%);
+
+    .AlertBox-close {
+      color: darken(@color-error, 25%);
+    }
+  }
+}
+
+.AlertBox-title {
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.AlertBox-content {
+  display: block;
+  font-size: @alertbox-font-size;
+  margin-bottom: 0;
+
+  ul& {
+    padding-left: 1em;
+  }
+}
+
+.AlertBox-close {
+  line-height: 1;
+  position: absolute;
+  right: @space-vertical-sm;
+  top: @space-vertical-sm;
+  opacity: .5;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+}
