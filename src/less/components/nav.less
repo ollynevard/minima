@@ -44,14 +44,17 @@
 
   .Nav-item {
     > a {
-      border: 1px solid transparent;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 1px 1px 0 1px;
+      margin-bottom: -1px;
     }
 
     &.is-active {
       > a,
       > a:hover {
         background-color: #fff;
-        border: 1px solid @color-neutral-light;
+        border-color: @color-neutral-light;
         border-bottom-color: transparent;
       }
     }
