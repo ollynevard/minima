@@ -20,6 +20,10 @@
   .Nav-item {
     display: inline-block;
     margin-right: @space-horizontal-sm;
+    
+    /* IE7 display inline-block fix */
+    *display: inline;
+    zoom: 1;
 
     &:last-child {
       margin-right: 0;
