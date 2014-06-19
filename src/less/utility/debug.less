@@ -1,6 +1,26 @@
 /* ==========================================================================
-   Minima: Debug - Media breakpoints
+   Minima: Debug
    ========================================================================== */
+
+/* Grid cells
+   --------------------------------------------------------------------------- */
+
+.Grid-cell {
+  background-color: #eee;
+  background-clip: content-box;
+
+  .Grid-cell {
+    background-color: #ddd;
+
+    .Grid-cell {
+      background-color: #ccc;
+    }
+  }
+}
+
+
+/* Media query breakpoints
+   --------------------------------------------------------------------------- */
 
 body {
   &:after {
@@ -37,7 +57,7 @@ body {
       content: "Large";
     }
   }
-  
+
   @media @mq-xl {
     &:after {
       content: "X Large";
