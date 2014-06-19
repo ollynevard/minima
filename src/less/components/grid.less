@@ -42,14 +42,33 @@
 }
 
 /**
- * Modifier: gutters
+ * Modifier: space between grid cells
  */
 
-.Grid--withGutter {
-  margin-left: -@grid-gutter-size;
+.Grid--space {
+  .Grid--spaceHorizontal;
+  .Grid--spaceVertical;
+}
+
+/**
+ * Modifier: horizontal space between grid cells
+ */
+
+.Grid--spaceHorizontal {
+  margin-left: -@grid-space-horizontal;
 
   > .Grid-cell {
-    padding-left: @grid-gutter-size;
+    padding-left: @grid-space-horizontal;
+  }
+}
+
+/**
+ * Modifier: vertical space between grid cells
+ */
+
+.Grid--spaceVertical {
+  > .Grid-cell {
+    padding-bottom: @grid-space-vertical;
   }
 }
 
@@ -66,7 +85,7 @@
   text-align: left;
   vertical-align: top;
   width: 100%;
-  
+
   /* IE7 display inline-block fix */
   *display: inline;
   zoom: 1;
