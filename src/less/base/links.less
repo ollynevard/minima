@@ -2,18 +2,25 @@
    Minima: Links
    ========================================================================== */
 
+/**
+ * 1. Remove the gray background color from active links in IE 10.
+ */
+
 a {
+  background: transparent; /* 1 */
   color: @link-color;
   text-decoration: none;
   transition: 0.2s all;
 }
 
 a:hover {
+  outline: 0;
   color: @link-color-hover;
   text-decoration: underline;
 }
 
 a:focus {
+  outline: 0;
   color: @link-color-hover;
   display: inline-block;
   line-height: 1;
