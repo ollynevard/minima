@@ -6,8 +6,12 @@
   box-sizing: border-box;
 }
 
+/* 1. Set default font family to sans-serif. */
+
 html {
 	-webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 1 */
 }
 
 body {
@@ -15,7 +19,62 @@ body {
   font-size: @base-font-size;
   font-family: @base-font-family;
   line-height: @base-line-height;
+	margin: 0;
 	-webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/* Hide the `template` element in IE, Safari, and Firefox < 22. */
+
+template {
+	display: none;
+}
+
+/**
+ * 1. Contain overflow in all browsers.
+ */
+
+pre[class*="language-"],
+pre {
+  background: @color-neutral-lighter;
+  border: 1px solid @color-neutral-light;
+  font-family: monospace, monospace;
+  font-size: .9rem;
+  margin-bottom: @space-vertical;
+  margin-top: 0;
+  overflow: auto; /* 1 */
+  padding: @space-vertical @space-horizontal;
 }
 
 hr {
