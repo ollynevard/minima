@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Minima: Floats
+   ========================================================================== */
+
+.u-floatLeft {
+	float: left;
+}
+
+.u-floatRight {
+	float: right;
+}
+
+.u-clearLeft {
+	clear: left;
+}
+
+.u-clearRight {
+	clear: right;
+}
+
+.u-clearBoth {
+	clear: both;
+}
+
+/* Clear floats */
+.u-cf {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
