@@ -5,9 +5,39 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
+	margin-bottom: @space-vertical;
+
+	td, th {
+		padding: @space-vertical-xs @space-horizontal-xs;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
 }
 
-td,
-th {
-  padding: 0;
+table.m-border {
+	td, th {
+		border: 1px solid @color-neutral-light;
+
+		&:first-child {
+			padding-left: @space-horizontal-xs;
+		}
+
+		&:last-child {
+			padding-right: @space-horizontal-xs;
+		}
+	}
+}
+
+table.m-zebra {
+	tbody tr:nth-child(even) {
+		td, th {
+			background: @color-neutral-lighter;
+		}
+	}
 }
