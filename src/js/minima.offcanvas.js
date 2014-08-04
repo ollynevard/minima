@@ -191,10 +191,22 @@
       initialized = true;
       options = $.extend(options, opts || {});
 
-      // Wrap body contents.
-      $('body').wrapInner('<div class="OffCanvas-page">');
-      data.$page = $('.OffCanvas-page').wrap('<div class="OffCanvas">');
+      // Set the canvas and page elements.
       data.$canvas = $('.OffCanvas');
+      data.$page = $('.OffCanvas-page');
+
+      // If canvas and page elements do not exist, create them manually.
+      if (!data.$page.length && !data.$canvas.length) {
+        $('body').wrapInner('<div class="OffCanvas-page">');
+        data.$page = $('.OffCanvas-page').wrap('<div class="OffCanvas">');
+        data.$canvas = $('.OffCanvas');
+      }
+
+      // If either of the elements have not been set, product a warning and exit
+      if ((!data.$canvas.length || !data.$page.length) && typeof console == "object") {
+        console.warn('OffCanvas has been improperly initalized.');
+        return;
+      }
 
       // Create panels.
       data.$panels = {};
