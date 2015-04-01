@@ -29,6 +29,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
+          'dist/js/minima.smoothscroll.min.js': ['src/js/minima.smoothscroll.js'],
           'dist/js/minima.offcanvas.min.js': ['src/js/minima.offcanvas.js'],
           'dist/js/minima.alertbox.min.js': ['src/js/minima.alertbox.js']
         }
