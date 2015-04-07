@@ -1,7 +1,15 @@
 {
   "name": "minima",
-  "description": "A modular, responsive front-end framework",
   "version": "0.0.1",
+  "description": "A modular, responsive front-end framework",
+  "author": "Olly Nevard",
+  "contributors": [{
+    "name": "George Waters"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nievo/minima"
+  },
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-autoprefixer": "~0.7.2",

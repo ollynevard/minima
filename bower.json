@@ -1,10 +1,15 @@
 {
   "name": "minima",
   "version": "0.0.19",
-  "homepage": "https://github.com/nievo/minima",
+  "description": "A modular, responsive front-end framework",
   "authors": [
-    "Olly Nevard <olivernevard@greeneking.co.uk>"
+    { "name": "Olly Nevard" },
+    { "name": "George Waters" }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nievo/minima.git"
+  },
   "ignore": [
     "**/.*"
   ]
