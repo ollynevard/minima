@@ -35,7 +35,7 @@
 
                 // If the element exists
                 if (target.length) {
-                    $('body').animate({
+                    $('body, html').animate({
                         scrollTop: target.offset().top + this.options.offset
                     }, this.options.duration, this.options.easing, function() {
                         if (history.pushState) {
