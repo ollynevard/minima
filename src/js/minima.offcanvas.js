@@ -57,6 +57,7 @@
         var panelOptions = options.panels[openPanel],
             sideLookup = sidesLookup[panelOptions.side];
 
+        $('body').removeClass('not-scrollable');
         data.$canvas.removeClass('is-open');
 
         // Close panel.
@@ -152,6 +153,7 @@
 
         openPanel = panelName;
 
+        $('body').addClass('not-scrollable');
         data.$canvas.addClass('is-open');
         data.$panels[panelName]
           .addClass('is-open')
