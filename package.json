@@ -1,7 +1,7 @@
 {
   "name": "minima",
-  "version": "0.0.26",
   "license": "MIT",
+  "version": "0.0.27",
   "description": "A modular, responsive front-end framework",
   "author": "Olly Nevard",
   "contributors": [{
