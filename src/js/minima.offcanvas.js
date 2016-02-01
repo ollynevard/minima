@@ -67,7 +67,7 @@
           .find('input').trigger('blur'); // Close mobile keyboard if open.
 
         // Re-position page.
-        data.$page.off('.OffCanvas')
+        data.$page
           .css(panelOptions.side, '')
           .css(sideLookup.opposite, '');
 
@@ -163,7 +163,7 @@
         size = _getPanelSize(panelName);
 
         // Position page.
-        data.$page.one('touchstart.OffCanvas click.OffCanvas', _onClick)
+        data.$page
           .css(panelOptions.side, '+='+size)
           .css(sideLookup.opposite, '-='+size);
 
